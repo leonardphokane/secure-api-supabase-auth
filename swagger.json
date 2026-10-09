@@ -1,0 +1,59 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Secure API",
+    "version": "1.0.0"
+  },
+  "servers": [{ "url": "http://localhost:3000" }],
+  "components": {
+    "securitySchemes": {
+      "BearerAuth": {
+        "type": "http",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
+    }
+  },
+  "paths": {
+    "/auth/signup": {
+      "post": {
+        "summary": "Sign up",
+        "requestBody": { "required": true },
+        "responses": { "201": { "description": "Created" } }
+      }
+    },
+    "/auth/login": {
+      "post": {
+        "summary": "Log in",
+        "responses": { "200": { "description": "OK" } }
+      }
+    },
+    "/auth/logout": {
+      "post": {
+        "summary": "Log out",
+        "security": [{ "BearerAuth": [] }],
+        "responses": { "204": { "description": "No Content" } }
+      }
+    },
+    "/public/info": {
+      "get": {
+        "summary": "Public info",
+        "responses": { "200": { "description": "OK" } }
+      }
+    },
+    "/protected/profile": {
+      "get": {
+        "summary": "Protected profile",
+        "security": [{ "BearerAuth": [] }],
+        "responses": { "200": { "description": "OK" }, "401": { "description": "Unauthorized" } }
+      }
+    },
+    "/protected/dashboard": {
+      "get": {
+        "summary": "Protected dashboard",
+        "security": [{ "BearerAuth": [] }],
+        "responses": { "200": { "description": "OK" }, "401": { "description": "Unauthorized" } }
+      }
+    }
+  }
+}

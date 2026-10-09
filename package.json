@@ -1,0 +1,31 @@
+{
+  "name": "secure-api",
+  "version": "1.0.0",
+  "description": "This project demonstrates how to build a secure API using Node.js, Express, and Supabase Auth. It implements modern authentication flows with JWTs, middleware protection, and Swagger UI documentation.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "express",
+    "supabase",
+    "swagger",
+    "auth"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.3",
+    "dotenv": "^18.0.6",
+    "express": "^5.2.1",
+    "node-fetch": "^3.3.2",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
