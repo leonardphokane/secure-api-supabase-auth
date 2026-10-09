@@ -249,7 +249,7 @@ A peer can clone, add their own `.env` values, and run the API in under 5 minute
 
 This section compares how an AI assistant generated a similar secure‑API setup versus your manual implementation.
 
-![Auth – Login & Protect](screenshots/auth-login-protect.png)
+![Auth – Login & Protect](images/auth-login-protect.png)
 
 **Focus Points:**
 - Did the AI handle `Bearer <token>` parsing correctly?
