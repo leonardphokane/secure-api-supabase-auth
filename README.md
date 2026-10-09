@@ -37,7 +37,7 @@ PORT=3000
 
 ```
 
-⚠️ **Important**: .env is already listed in .gitignore. Never commit your Supabase keys.
+⚠️ **Important**: .env is already listed in .gitignore. Never commit Supabase keys.
 
 4. Run the Server
 ```bash
@@ -72,22 +72,6 @@ http://localhost:3000
 
 **5. Refresh →** Rotate tokens and extend session
 `POST /auth/refresh`
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ---
 
@@ -208,7 +192,7 @@ Swagger UI is available at:
 
 Protected routes show a 🔒 lock icon.
 
-Click **Authorize**, paste your JWT, and test endpoints directly.
+Click **Authorize**, paste JWT, and test endpoints directly.
 
 📸 Example Swagger UI screenshot:
 ![Swagger UI Authorized Protected Route](screenshots/swagger-ui-authorized-dashboard.jpeg)
@@ -247,7 +231,7 @@ A peer can clone, add their own `.env` values, and run the API in under 5 minute
 
 ## 🤖 Bonus: AI vs Me (Optional)
 
-This section compares how an AI assistant generated a similar secure‑API setup versus your manual implementation.
+This section compares how an AI assistant generated a similar secure‑API setup versus my manual implementation.
 
 ![Auth – Login & Protect](images/auth-login-protect.png)
 
