@@ -148,7 +148,7 @@ curl -i -X POST http://localhost:3000/auth/refresh \
 ---
 
 ✅ Flow Summary
-- Signup → Create user
+- **Signup →** Create user
 
 - **Login →** Get tokens
 
